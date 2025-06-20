@@ -3,38 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Bree's Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:53, heavy rainfall
-          <br />
-          Humidity: 66%, wind: 4.5km/h
-        </p>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="city-search"
+          />
+          <input type="submit" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="search-outcome">
+        <div>
+          <h1 class="city">Paris</h1>
+          <p class="temperature-result">
+            Tuesday 14:53, heavy rainfall
+            <br />
+            Humidity: <strong>66%</strong>, wind:<strong> 4.5km/h</strong>
+          </p>
+        </div>
+        <div class="temp-content">
+        <div class="emoji">⛅</div>
+        <div class="temperature">12</div>
+        <div class="unit-measurement">°C</div>
       </div>
-      <div>⛅12°C</div>
-    </main>
-    <footer>
-      This project is coded by
-      <a
-        href="https://www.linkedin.com/in/bridgette-kamwana-581bb1311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-        target="_blank"
-        >Bridgette Kamwana</a
-      >
-      and is
-      <a href="https://github.com/Breekam" target="_blank">on GitHub</a> and
-      <a href="https://bree-weather-app.onrender.com" target="_blank"
-        >hosted on Render</a
-      >
-    </footer>
+      </div>
+      </main>
+      <footer>
+        This project is coded by
+        <a
+          href="https://www.linkedin.com/in/bridgette-kamwana-581bb1311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          target="_blank"
+          >Bridgette Kamwana</a
+        >
+        and is
+        <a href="https://github.com/Breekam" target="_blank">on GitHub</a> and
+        <a href="https://bree-weather-app.onrender.com" target="_blank"
+          >hosted on Render</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
