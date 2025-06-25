@@ -15,32 +15,33 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="city-search"
+            id="city-search-input"
           />
           <input type="submit" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="search-outcome">
-        <div>
-          <h1 class="city">Paris</h1>
-          <p class="temperature-result">
-            Tuesday 14:53, heavy rainfall
-            <br />
-            Humidity: <strong>66%</strong>, wind:<strong> 4.5km/h</strong>
-          </p>
+          <div>
+            <h1 class="city" id="city">Paris</h1>
+            <p class="temperature-result">
+              Tuesday 14:53, heavy rainfall
+              <br />
+              Humidity: <strong>66%</strong>, wind:<strong> 4.5km/h</strong>
+            </p>
+          </div>
+          <div class="temp-content">
+            <div class="emoji">⛅</div>
+            <div class="temperature">12</div>
+            <div class="unit-measurement">°C</div>
+          </div>
         </div>
-        <div class="temp-content">
-        <div class="emoji">⛅</div>
-        <div class="temperature">12</div>
-        <div class="unit-measurement">°C</div>
-      </div>
-      </div>
       </main>
       <footer>
         This project is coded by
@@ -56,5 +57,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
