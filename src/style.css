@@ -75,19 +75,19 @@ strong {
 }
 
 .emoji {
-  font-size: 48px;
-  margin-top: 40px;
+  width: 88px;
+  height: 88px;
 }
 
 .temperature {
-  font-size: 90px;
-  margin-left: 10px;
+  font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
 }
 
 .unit-measurement {
-  margin-top: 27px;
-  font-size: 28px;
+  margin-top: 8px;
+  font-size: 30px;
 }
 
 footer {

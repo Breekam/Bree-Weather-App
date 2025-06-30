@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Bree's Weather App</title>
   </head>
   <body>
@@ -29,16 +30,18 @@
       <main>
         <div class="search-outcome">
           <div>
-            <h1 class="city" id="city">Paris</h1>
+            <h1 class="city" id="city"></h1>
             <p class="temperature-result">
-              Tuesday 14:53, heavy rainfall
+              <span id="time"></span>, <span id="description"></span>
               <br />
-              Humidity: <strong>66%</strong>, wind:<strong> 4.5km/h</strong>
+              Humidity: <strong id="humidity"></strong>, wind:<strong
+                id="wind-speed"
+              ></strong>
             </p>
           </div>
           <div class="temp-content">
-            <div class="emoji">⛅</div>
-            <div class="temperature">12</div>
+            <div id="icon"></div>
+            <div class="temperature" id="temperature"></div>
             <div class="unit-measurement">°C</div>
           </div>
         </div>
